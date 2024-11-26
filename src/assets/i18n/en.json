@@ -1,0 +1,26 @@
+{
+    "NAV": {
+      "HOME":"Home",
+      "ABOUT": "About",
+      "CARS": "Cars",
+      "POLICIES": "Policies",
+      "CONTACT": "Contact"
+    },
+    "HOME": {
+      "TITLE": "Trancom Automobile",
+      "WELCOME": "Welcome to our car rental service"
+    },
+    "CONTACT": {
+      "TITLE": "Contact Us",
+      "SEND_MESSAGE": "Send us a message",
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "SEND_BUTTON": "Send Message",
+      "INFO_TITLE": "Contact Information",
+      "ADDRESS": "Address",
+      "PHONE": "Phone",
+      "HOURS": "Hours",
+      "HOURS_VALUE": "Monday - Sunday: 8:00 AM - 8:00 PM"
+    }
+  }

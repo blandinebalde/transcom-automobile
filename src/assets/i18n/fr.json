@@ -1,0 +1,26 @@
+{
+  "NAV": {
+    "HOME": "Accueil",
+    "ABOUT": "À propos",
+    "CARS": "Voitures",
+    "POLICIES": "Politiques",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "TITLE": "Trancom Automobile",
+    "WELCOME": "Bienvenue dans notre service de location de voitures"
+  },
+  "CONTACT": {
+    "TITLE": "Contactez-nous",
+    "SEND_MESSAGE": "Envoyez-nous un message",
+    "NAME": "Nom",
+    "EMAIL": "Courriel",
+    "MESSAGE": "Message",
+    "SEND_BUTTON": "Envoyer le message",
+    "INFO_TITLE": "Informations de contact",
+    "ADDRESS": "Adresse",
+    "PHONE": "Téléphone", 
+    "HOURS": "Horaires",
+    "HOURS_VALUE": "Lundi - Dimanche: 8h00 - 20h00"
+  }
+}

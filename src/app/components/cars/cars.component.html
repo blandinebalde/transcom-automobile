@@ -1,0 +1,32 @@
+
+    <div class="container section-padding">
+      <h1 class="text-center mb-5">Our Fleet</h1>
+      
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <select class="form-select" [(ngModel)]="selectedCategory">
+            <option value="">All Categories</option>
+            <option value="SUV">SUV</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Luxury">Luxury</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        @for (car of filteredCars; track car.id) {
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img [src]="car.image" class="card-img-top" [alt]="car.name">
+              <div class="card-body">
+                <h5 class="card-title">{{car.name}}</h5>
+                <p class="card-text">Category: {{car.category}}</p>
+                <p class="card-text">Price per day: ${{car.price}}</p>
+                <button class="btn btn-primary">Book Now</button>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  
