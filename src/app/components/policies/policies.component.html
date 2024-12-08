@@ -1,0 +1,93 @@
+<div class="container section-padding">
+    <h1 class="text-center mb-5">{{ 'POLICIES.TITLE' | translate }}</h1>
+    
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h2>{{ 'POLICIES.REQUIREMENTS.TITLE' | translate }}</h2>
+        <ul class="list-group">
+          <li class="list-group-item">{{ 'POLICIES.REQUIREMENTS.DRIVERS_LICENSE' | translate }}</li>
+          <li class="list-group-item">{{ 'POLICIES.REQUIREMENTS.MIN_AGE' | translate }}</li>
+          <li class="list-group-item">{{ 'POLICIES.REQUIREMENTS.CREDIT_CARD' | translate }}</li>
+        </ul>
+      </div>
+      
+      <div class="col-md-6 mb-4">
+        <h2>{{ 'POLICIES.INSURANCE.TITLE' | translate }}</h2>
+        <ul class="list-group">
+          <li class="list-group-item">{{ 'POLICIES.INSURANCE.BASIC' | translate }}</li>
+          <li class="list-group-item">{{ 'POLICIES.INSURANCE.FULL_COVERAGE' | translate }}</li>
+          <li class="list-group-item">{{ 'POLICIES.INSURANCE.ROADSIDE' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h2>{{ 'POLICIES.FAQ.TITLE' | translate }}</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              {{ 'POLICIES.FAQ.DURATION.QUESTION' | translate }}
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              {{ 'POLICIES.FAQ.DURATION.ANSWER' | translate }}
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              {{ 'POLICIES.FAQ.LATE_RETURN.QUESTION' | translate }}
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              {{ 'POLICIES.FAQ.LATE_RETURN.ANSWER' | translate }}
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              {{ 'POLICIES.FAQ.AIRPORT.QUESTION' | translate }}
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              {{ 'POLICIES.FAQ.AIRPORT.ANSWER' | translate }}
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              {{ 'POLICIES.FAQ.PRICE.QUESTION' | translate }}
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              {{ 'POLICIES.FAQ.PRICE.ANSWER' | translate }}
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+              {{ 'POLICIES.FAQ.MODIFICATION.QUESTION' | translate }}
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              {{ 'POLICIES.FAQ.MODIFICATION.ANSWER' | translate }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
