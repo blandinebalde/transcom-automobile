@@ -49,7 +49,8 @@
       "ADDRESS": "Address",
       "PHONE": "Phone",
       "HOURS": "Hours",
-      "HOURS_VALUE": "Monday - Sunday: 8:00 AM - 8:00 PM"
+      "HOURS_VALUE": "Monday - Sunday: 8:00 AM - 8:00 PM",
+      "SUBTITLE": "We're here to help you with any questions or concerns you may have. Please feel free to contact us using the form below or through our contact information."
     },
     "POLICIES": {
       "TITLE": "Rental Policies",

@@ -49,7 +49,8 @@
     "ADDRESS": "Adresse",
     "PHONE": "Téléphone",
     "HOURS": "Horaires",
-    "HOURS_VALUE": "Lundi - Dimanche : 8h00 - 20h00"
+    "HOURS_VALUE": "Lundi - Dimanche : 8h00 - 20h00",
+    "SUBTITLE": "Nous sommes là pour vous aider avec toutes les questions ou préoccupations que vous pourriez avoir. Veuillez nous contacter en utilisant le formulaire ci-dessous ou via nos informations de contact."
   },
   "POLICIES": {
     "TITLE": "Politiques de Location",
