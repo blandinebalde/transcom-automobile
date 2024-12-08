@@ -1,0 +1,92 @@
+{
+  "NAV": {
+    "HOME": "Accueil",
+    "ABOUT": "À propos",
+    "CARS": "Voitures",
+    "POLICIES": "Politiques",
+    "CONTACT": "Contact"
+  },
+  "HOME": {
+    "TITLE": "Trancom Automobile",
+    "WELCOME": "Bienvenue dans notre service de location de voitures",
+    "HERO": {
+      "WELCOME": "Bienvenue chez Transcom Automobile",
+      "WELCOME_SUB": "Découvrez le luxe et le confort avec notre sélection de voitures haut de gamme",
+      "PREMIUM_FLEET": "Flotte Premium",
+      "PREMIUM_FLEET_SUB": "Choisissez parmi notre large gamme de véhicules de luxe",
+      "ELEGANT_SEDANS": "Berlines Élégantes",
+      "ELEGANT_SEDANS_SUB": "Voyagez avec style dans nos berlines de luxe",
+      "SUV_COLLECTION": "Collection SUV",
+      "SUV_COLLECTION_SUB": "Parfait pour les voyages en famille et les aventures",
+      "EXECUTIVE_CLASS": "Classe Executive",
+      "EXECUTIVE_CLASS_SUB": "Faites forte impression avec nos véhicules haut de gamme"
+    },
+    "FEATURES": {
+      "TITLE": "Pourquoi Nous Choisir",
+      "PREMIUM_CARS": "Voitures Premium",
+      "PREMIUM_CARS_SUB": "Derniers modèles des meilleures marques",
+      "SUPPORT_247": "Support 24/7",
+      "SUPPORT_247_SUB": "Toujours là pour vous aider",
+      "BEST_RATES": "Meilleurs Tarifs",
+      "BEST_RATES_SUB": "Prix compétitifs garantis"
+    },
+    "ABOUT": {
+      "TITLE": "À propos de Transcom Automobile",
+      "STORY_TITLE": "Notre Histoire",
+      "STORY_TEXT": "Fondée en 2024, Transcom Automobile fournit des services de location de voitures haut de gamme à nos clients privilégiés. Nous sommes fiers de notre flotte exceptionnelle de véhicules et de notre service client remarquable.",
+      "MISSION_TITLE": "Notre Mission",
+      "MISSION_TEXT": "Offrir à nos clients les plus beaux véhicules de luxe et une expérience de location inégalée, garantissant confort, sécurité et satisfaction à chaque voyage."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contactez-nous",
+    "SEND_MESSAGE": "Envoyez-nous un message",
+    "NAME": "Nom",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SEND_BUTTON": "Envoyer le message",
+    "INFO_TITLE": "Informations de contact",
+    "ADDRESS": "Adresse",
+    "PHONE": "Téléphone",
+    "HOURS": "Horaires",
+    "HOURS_VALUE": "Lundi - Dimanche : 8h00 - 20h00"
+  },
+  "POLICIES": {
+    "TITLE": "Politiques de Location",
+    "REQUIREMENTS": {
+      "TITLE": "Conditions Requises",
+      "DRIVERS_LICENSE": "Permis de conduire valide",
+      "MIN_AGE": "Âge minimum : 25 ans",
+      "CREDIT_CARD": "Carte de crédit pour la caution"
+    },
+    "INSURANCE": {
+      "TITLE": "Assurance",
+      "BASIC": "Assurance de base incluse",
+      "FULL_COVERAGE": "Couverture complète optionnelle disponible",
+      "ROADSIDE": "Assistance routière 24h/24"
+    },
+    "FAQ": {
+      "TITLE": "FAQ",
+      "DURATION": {
+        "QUESTION": "Quelle est la durée de location ?",
+        "ANSWER": "La période minimale de location est de 24 heures. Des locations longue durée sont disponibles avec des tarifs spéciaux."
+      },
+      "LATE_RETURN": {
+        "QUESTION": "Que se passe-t-il si je retourne la voiture en retard ?",
+        "ANSWER": "Les retours tardifs sont facturés à un tarif horaire. Si vous savez que vous serez en retard, veuillez nous contacter pour prolonger votre location."
+      },
+      "AIRPORT": {
+        "QUESTION": "Proposez-vous un service de prise en charge/dépôt à l'aéroport ?",
+        "ANSWER": "Oui, nous offrons un service gratuit de prise en charge et de dépôt à l'aéroport pour toutes les locations."
+      },
+      "PRICE": {
+        "QUESTION": "Qu'est-ce qui est inclus dans le prix de location ?",
+        "ANSWER": "L'assurance de base, l'assistance routière 24h/24 et le kilométrage standard sont inclus. Le carburant n'est pas inclus."
+      },
+      "MODIFICATION": {
+        "QUESTION": "Puis-je modifier ou annuler ma réservation ?",
+        "ANSWER": "Oui, les réservations peuvent être modifiées ou annulées jusqu'à 24 heures avant l'heure de prise en charge sans pénalité."
+      }
+    }
+  }
+}

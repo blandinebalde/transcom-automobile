@@ -1,0 +1,92 @@
+{
+    "NAV": {
+      "HOME":"Home",
+      "ABOUT": "About",
+      "CARS": "Cars",
+      "POLICIES": "Policies",
+      "CONTACT": "Contact"
+    },
+    "HOME": {
+      "TITLE": "Trancom Automobile",
+      "WELCOME": "Welcome to our car rental service",
+      "HERO": {
+        "WELCOME": "Welcome to Transcom Automobile",
+        "WELCOME_SUB": "Experience luxury and comfort with our premium car selection",
+        "PREMIUM_FLEET": "Premium Fleet",
+        "PREMIUM_FLEET_SUB": "Choose from our wide range of luxury vehicles",
+        "ELEGANT_SEDANS": "Elegant Sedans",
+        "ELEGANT_SEDANS_SUB": "Travel in style with our luxury sedans",
+        "SUV_COLLECTION": "SUV Collection",
+        "SUV_COLLECTION_SUB": "Perfect for family trips and adventures",
+        "EXECUTIVE_CLASS": "Executive Class",
+        "EXECUTIVE_CLASS_SUB": "Make a statement with our executive vehicles"
+      },
+      "FEATURES": {
+        "TITLE": "Why Choose Us",
+        "PREMIUM_CARS": "Premium Cars",
+        "PREMIUM_CARS_SUB": "Latest models from top brands",
+        "SUPPORT_247": "24/7 Support",
+        "SUPPORT_247_SUB": "Always here to help you",
+        "BEST_RATES": "Best Rates",
+        "BEST_RATES_SUB": "Competitive prices guaranteed"
+      },
+      "ABOUT": {
+        "TITLE": "About Transcom Automobile",
+        "STORY_TITLE": "Our Story",
+        "STORY_TEXT": "Founded in 2024, Transcom Automobile has been providing premium car rental services to our valued customers. We pride ourselves on our exceptional fleet of vehicles and outstanding customer service.",
+        "MISSION_TITLE": "Our Mission",
+        "MISSION_TEXT": "To provide our customers with the finest luxury vehicles and an unmatched rental experience, ensuring comfort, safety, and satisfaction in every journey."
+      }
+    },
+    "CONTACT": {
+      "TITLE": "Contact Us",
+      "SEND_MESSAGE": "Send us a message",
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "SEND_BUTTON": "Send Message",
+      "INFO_TITLE": "Contact Information",
+      "ADDRESS": "Address",
+      "PHONE": "Phone",
+      "HOURS": "Hours",
+      "HOURS_VALUE": "Monday - Sunday: 8:00 AM - 8:00 PM"
+    },
+    "POLICIES": {
+      "TITLE": "Rental Policies",
+      "REQUIREMENTS": {
+        "TITLE": "Requirements",
+        "DRIVERS_LICENSE": "Valid driver's license",
+        "MIN_AGE": "Minimum age: 25 years",
+        "CREDIT_CARD": "Credit card for security deposit"
+      },
+      "INSURANCE": {
+        "TITLE": "Insurance",
+        "BASIC": "Basic insurance included",
+        "FULL_COVERAGE": "Optional full coverage available",
+        "ROADSIDE": "24/7 roadside assistance"
+      },
+      "FAQ": {
+        "TITLE": "FAQ",
+        "DURATION": {
+          "QUESTION": "What is the rental duration?",
+          "ANSWER": "Minimum rental period is 24 hours. Long-term rentals are available with special rates."
+        },
+        "LATE_RETURN": {
+          "QUESTION": "What happens if I return the car late?",
+          "ANSWER": "Late returns are charged at an hourly rate. If you know you'll be late, please contact us to extend your rental."
+        },
+        "AIRPORT": {
+          "QUESTION": "Do you offer airport pickup/drop-off?",
+          "ANSWER": "Yes, we offer complimentary airport pickup and drop-off services for all rentals."
+        },
+        "PRICE": {
+          "QUESTION": "What is included in the rental price?",
+          "ANSWER": "Basic insurance, 24/7 roadside assistance, and standard mileage allowance are included. Fuel is not included."
+        },
+        "MODIFICATION": {
+          "QUESTION": "Can I modify or cancel my reservation?",
+          "ANSWER": "Yes, reservations can be modified or cancelled up to 24 hours before the pickup time without penalty."
+        }
+      }
+    }
+  }
