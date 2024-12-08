@@ -15,6 +15,6 @@ def remove_background(input_path, output_path):
 
 # Usage
 remove_background(
-    '../assets/images/logo.png',
-    '../assets/images/logo2.png',
+    '../assets/images/logosb.png',
+    '../assets/images/logosb2.png',
 ) 
