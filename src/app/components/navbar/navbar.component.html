@@ -1,28 +1,51 @@
-    <nav class="navbar navbar-expand-lg navbar-light mobile-nav" style="background-color: var(--primary-color)" >
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color:  var(--primary-color) ">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logosb2.png" alt="Logo" height="40" class="logo-img d-none d-lg-block" style="transition: transform 0.3s ease; transform-origin: center; transform: scale(2.5);" onmouseover="this.style.transform='scale(3.5)'" onmouseout="this.style.transform='scale(2.5)'">
-          <img src="assets/images/logosb2.png" alt="Logo" height="30" class="logo-img d-lg-none" style="transition: transform 0.3s ease; transform-origin: center; transform: scale(4);" onmouseover="this.style.transform='scale(3.5)'" onmouseout="this.style.transform='scale(4)'">
+        <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 10px;">
+          <img src="assets/images/logosb2.png" alt="Logo" height="40" class="logo-img d-none d-lg-block" 
+               style="transition: all 0.3s ease; transform-origin: center; transform: scale(2.5);"
+               onmouseover="this.style.transform='scale(2.8)'" 
+               onmouseout="this.style.transform='scale(2.5)'">
+          <img src="assets/images/logosb2.png" alt="Logo" height="30" class="logo-img d-lg-none"
+               style="transition: all 0.3s ease; transform-origin: center; transform: scale(4);"
+               onmouseover="this.style.transform='scale(4)'"
+               onmouseout="this.style.transform='scale(5)'">
         </a>
-        <button class="navbar-toggler border-white bg-white" type="button" (click)="isMenuCollapsed = !isMenuCollapsed" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler border-white bg-white" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item my-2 my-lg-0">
-              <a class="nav-link text-white" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'NAV.HOME' | translate }}</a>
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium text-white" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fas fa-home me-1"></i>
+                {{ 'NAV.HOME' | translate }}
+              </a>
             </li>
-            <li class="nav-item my-2 my-lg-0">
-              <a class="nav-link text-white" routerLink="/cars" routerLinkActive="active">{{ 'NAV.CARS' | translate }}</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium text-white" routerLink="/cars" routerLinkActive="active">
+                <i class="fas fa-car me-1"></i>
+                {{ 'NAV.CARS' | translate }}
+              </a>
             </li>
-            <li class="nav-item my-2 my-lg-0">
-              <a class="nav-link text-white" routerLink="/policies" routerLinkActive="active">{{ 'NAV.POLICIES' | translate }}</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium text-white" routerLink="/policies" routerLinkActive="active">
+                <i class="fas fa-shield-alt me-1"></i>
+                {{ 'NAV.POLICIES' | translate }}
+              </a>
             </li>
-            <li class="nav-item my-2 my-lg-0">
-              <a class="nav-link text-white" routerLink="/contact" routerLinkActive="active">{{ 'NAV.CONTACT' | translate }}</a>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-medium text-white" routerLink="/contact" routerLinkActive="active">
+                <i class="fas fa-envelope me-1"></i>
+                {{ 'NAV.CONTACT' | translate }}
+              </a>
             </li>
-            <li class="nav-item my-2 my-lg-0">
-              <button class="btn btn-outline-light w-100 w-lg-auto" (click)="switchLang({target: {value: getCurrentLang() === 'en' ? 'fr' : 'en'}})">
+            <li class="nav-item ms-2">
+              <button class="btn btn-outline-primary rounded-pill px-4 hover-scale" 
+                      (click)="switchLang({target: {value: getCurrentLang() === 'en' ? 'fr' : 'en'}})">
+                <i class="fas fa-globe me-1"></i>
                 {{ getCurrentLang() === 'en' ? 'FR' : 'EN' }}
               </button>
             </li>

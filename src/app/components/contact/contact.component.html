@@ -1,34 +1,103 @@
     <div class="container section-padding">
-      <h1 class="text-center mb-5">{{ 'CONTACT.TITLE' | translate }}</h1>
+      <div class="text-center mb-3">
+        <h1 class="display-4 fw-bold text-primary">{{ 'CONTACT.TITLE' | translate }}</h1>
+        <p class="lead text-muted">{{ 'CONTACT.SUBTITLE' | translate }}</p>
+      </div>
       
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <h2>{{ 'CONTACT.SEND_MESSAGE' | translate }}</h2>
-          <form (ngSubmit)="onSubmit()">
-            <div class="mb-3">
-              <label for="name" class="form-label">{{ 'CONTACT.NAME' | translate }}</label>
-              <input type="text" class="form-control" id="name" [(ngModel)]="formData.name" name="name" required>
+      <div class="row g-5">
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow-lg border-0 rounded-lg h-100">
+            <div class="card-body p-5">
+              <h2 class="h3 fw-bold text-primary mb-4">
+                <i class="fas fa-paper-plane me-2"></i>
+                {{ 'CONTACT.SEND_MESSAGE' | translate }}
+              </h2>
+              
+              <form (ngSubmit)="onSubmit()" class="contact-form">
+                <div class="form-floating mb-4">
+                  <input type="text" class="form-control" id="name" [(ngModel)]="formData.name" name="name" placeholder="John Doe" required>
+                  <label for="name">
+                    <i class="far fa-user me-2"></i>
+                    {{ 'CONTACT.NAME' | translate }}
+                  </label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email" placeholder="name@example.com" required>
+                  <label for="email">
+                    <i class="far fa-envelope me-2"></i>
+                    {{ 'CONTACT.EMAIL' | translate }}
+                  </label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <textarea class="form-control" id="message" [(ngModel)]="formData.message" name="message" placeholder="Your message" style="height: 150px" required></textarea>
+                  <label for="message">
+                    <i class="far fa-comment-alt me-2"></i>
+                    {{ 'CONTACT.MESSAGE' | translate }}
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  <i class="fas fa-paper-plane me-2"></i>
+                  {{ 'CONTACT.SEND_BUTTON' | translate }}
+                </button>
+              </form>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">{{ 'CONTACT.EMAIL' | translate }}</label>
-              <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">{{ 'CONTACT.MESSAGE' | translate }}</label>
-              <textarea class="form-control" id="message" rows="5" [(ngModel)]="formData.message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">{{ 'CONTACT.SEND_BUTTON' | translate }}</button>
-          </form>
+          </div>
         </div>
         
-        <div class="col-md-6">
-          <h2>{{ 'CONTACT.INFO_TITLE' | translate }}</h2>
-          <div class="card">
-            <div class="card-body">
-              <p><strong>{{ 'CONTACT.ADDRESS' | translate }}:</strong> Rufisque, dakar, Sénégal</p>
-              <p><strong>{{ 'CONTACT.PHONE' | translate }}:</strong> (221) 77 029 52 00 - 78 147 24 01</p>
-              <p><strong>{{ 'CONTACT.EMAIL' | translate }}:</strong> transcomtransit&#64;hotmail.com / luniq95&#65;gmail.com</p>
-              <p><strong>{{ 'CONTACT.HOURS' | translate }}:</strong> {{ 'CONTACT.HOURS_VALUE' | translate }}</p>
+        <div class="col-lg-6">
+          <div class="card shadow-lg border-0 rounded-lg h-100">
+            <div class="card-body p-5">
+              <h2 class="h3 fw-bold text-primary mb-4">
+                <i class="fas fa-info-circle me-2"></i>
+                {{ 'CONTACT.INFO_TITLE' | translate }}
+              </h2>
+
+              <div class="contact-info">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="contact-icon me-3">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold mb-1">{{ 'CONTACT.ADDRESS' | translate }}</h3>
+                    <p class="mb-0 text-muted">Rufisque, dakar, Sénégal</p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-4">
+                  <div class="contact-icon me-3">
+                    <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold mb-1">{{ 'CONTACT.PHONE' | translate }}</h3>
+                    <p class="mb-0 text-muted">(221) 77 029 52 00</p>
+                    <p class="mb-0 text-muted">(221) 78 147 24 01</p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-4">
+                  <div class="contact-icon me-3">
+                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold mb-1">{{ 'CONTACT.EMAIL' | translate }}</h3>
+                    <p class="mb-0 text-muted">transcomtransit&#64;hotmail.com</p>
+                    <p class="mb-0 text-muted">luniq95&#64;gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <div class="contact-icon me-3">
+                    <i class="fas fa-clock fa-2x text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 fw-bold mb-1">{{ 'CONTACT.HOURS' | translate }}</h3>
+                    <p class="mb-0 text-muted">{{ 'CONTACT.HOURS_VALUE' | translate }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

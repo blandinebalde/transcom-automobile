@@ -50,31 +50,40 @@
       </ngb-carousel>
     </section>
 
-    <section class="features section-padding">
+    <section class="features section-padding bg-light">
       <div class="container">
-        <h2 class="text-center mb-5">{{ 'HOME.FEATURES.TITLE' | translate }}</h2>
-        <div class="row">
+        <h2 class="text-center mb-5 display-4 fw-bold text-primary">{{ 'HOME.FEATURES.TITLE' | translate }}</h2>
+        <div class="row g-4">
           <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body text-center">
-                <h3>{{ 'HOME.FEATURES.PREMIUM_CARS' | translate }}</h3>
-                <p>{{ 'HOME.FEATURES.PREMIUM_CARS_SUB' | translate }}</p>
+            <div class="card h-100 border-0 shadow-lg hover-lift">
+              <div class="card-body text-center p-5">
+                <div class="feature-icon mb-4">
+                  <i class="fas fa-car-side fa-3x text-primary"></i>
+                </div>
+                <h3 class="h4 fw-bold mb-3">{{ 'HOME.FEATURES.PREMIUM_CARS' | translate }}</h3>
+                <p class="text-muted mb-0">{{ 'HOME.FEATURES.PREMIUM_CARS_SUB' | translate }}</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body text-center">
-                <h3>{{ 'HOME.FEATURES.SUPPORT_247' | translate }}</h3>
-                <p>{{ 'HOME.FEATURES.SUPPORT_247_SUB' | translate }}</p>
+            <div class="card h-100 border-0 shadow-lg hover-lift">
+              <div class="card-body text-center p-5">
+                <div class="feature-icon mb-4">
+                  <i class="fas fa-headset fa-3x text-primary"></i>
+                </div>
+                <h3 class="h4 fw-bold mb-3">{{ 'HOME.FEATURES.SUPPORT_247' | translate }}</h3>
+                <p class="text-muted mb-0">{{ 'HOME.FEATURES.SUPPORT_247_SUB' | translate }}</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-body text-center">
-                <h3>{{ 'HOME.FEATURES.BEST_RATES' | translate }}</h3>
-                <p>{{ 'HOME.FEATURES.BEST_RATES_SUB' | translate }}</p>
+            <div class="card h-100 border-0 shadow-lg hover-lift">
+              <div class="card-body text-center p-5">
+                <div class="feature-icon mb-4">
+                  <i class="fas fa-tags fa-3x text-primary"></i>
+                </div>
+                <h3 class="h4 fw-bold mb-3">{{ 'HOME.FEATURES.BEST_RATES' | translate }}</h3>
+                <p class="text-muted mb-0">{{ 'HOME.FEATURES.BEST_RATES_SUB' | translate }}</p>
               </div>
             </div>
           </div>
@@ -84,16 +93,26 @@
 
     <section class="about section-padding">
       <div class="container">
-        <h1 class="text-center mb-5">{{ 'HOME.ABOUT.TITLE' | translate }}</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <h2>{{ 'HOME.ABOUT.STORY_TITLE' | translate }}</h2>
-          <p>{{ 'HOME.ABOUT.STORY_TEXT' | translate }}</p>
-        </div>
-        <div class="col-md-6">
-          <h2>{{ 'HOME.ABOUT.MISSION_TITLE' | translate }}</h2>
-          <p>{{ 'HOME.ABOUT.MISSION_TEXT' | translate }}</p>
+        <h1 class="text-center display-4 fw-bold text-primary mb-5">{{ 'HOME.ABOUT.TITLE' | translate }}</h1>
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6">
+            <div class="about-content p-4 bg-light rounded-3 shadow-lg">
+              <div class="mb-4">
+                <i class="fas fa-book-open fa-2x text-primary"></i>
+              </div>
+              <h2 class="h3 fw-bold mb-4">{{ 'HOME.ABOUT.STORY_TITLE' | translate }}</h2>
+              <p class="lead text-muted">{{ 'HOME.ABOUT.STORY_TEXT' | translate }}</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-content p-4 bg-light rounded-3 shadow-lg">
+              <div class="mb-4">
+                <i class="fas fa-bullseye fa-2x text-primary"></i>
+              </div>
+              <h2 class="h3 fw-bold mb-4">{{ 'HOME.ABOUT.MISSION_TITLE' | translate }}</h2>
+              <p class="lead text-muted">{{ 'HOME.ABOUT.MISSION_TEXT' | translate }}</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </section>

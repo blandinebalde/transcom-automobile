@@ -1,0 +1,122 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg border-0 rounded-lg">
+        <div class="card-body p-5">
+          <h2 class="card-title text-primary mb-4 fw-bold">Car Details</h2>
+          <div class="car-details" *ngIf="car">
+            <div class="position-relative">
+              <img [src]="car.image" [alt]="car.name" class="img-fluid rounded-3 mb-4" style="width: 100%; height: 400px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.7));">
+                <h3 class="text-white mb-0">{{car.name}}</h3>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-tag text-primary me-2"></i>
+                  <p class="text-muted mb-0">Category: <span class="fw-bold">{{car.category}}</span></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-dollar-sign text-success me-2"></i>
+                  <p class="h4 text-success mb-0">{{car.price | currency}}/day</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 p-4 bg-light rounded-3">
+              <p class="lead mb-0">{{car.description}}</p>
+            </div>
+          </div>
+          <div class="car-details text-center py-5" *ngIf="!car">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 text-muted">Loading car details...</p>
+          </div>
+          <div class="calendar-container mt-5">
+            <h3 class="text-primary mb-4"><i class="far fa-calendar-alt me-2"></i>Check Availability</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-lg border-0 rounded-lg ">
+          <div class="card-body p-5">
+            <h2 class="card-title text-primary mb-4 fw-bold">
+              <i class="fas fa-clipboard-list me-2"></i>
+              Booking Request
+            </h2>
+            <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()" class="booking-form">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input type="date" class="form-control" id="startDate" formControlName="startDate">
+                    <label for="startDate"><i class="far fa-calendar-alt me-2"></i>Start Date</label>
+                    <div *ngIf="bookingForm.get('startDate')?.touched && bookingForm.get('startDate')?.invalid" 
+                         class="text-danger mt-1 small">
+                      <i class="fas fa-exclamation-circle me-1"></i>Start date is required
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input type="date" class="form-control" id="endDate" formControlName="endDate">
+                    <label for="endDate"><i class="far fa-calendar-alt me-2"></i>End Date</label>
+                    <div *ngIf="bookingForm.get('endDate')?.touched && bookingForm.get('endDate')?.invalid"
+                         class="text-danger mt-1 small">
+                      <i class="fas fa-exclamation-circle me-1"></i>End date is required
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" formControlName="name" placeholder="John Doe">
+                    <label for="name"><i class="far fa-user me-2"></i>Full Name</label>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="phone" formControlName="phone" placeholder="+1234567890">
+                    <label for="phone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mb-4">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" formControlName="email" placeholder="name@example.com">
+                  <label for="email"><i class="far fa-envelope me-2"></i>Email Address</label>
+                </div>
+              </div>
+  
+              <div class="mb-4">
+                <div class="form-floating">
+                  <textarea class="form-control" id="message" formControlName="message" style="height: 120px" 
+                            placeholder="Your message"></textarea>
+                  <label for="message"><i class="far fa-comment-alt me-2"></i>Additional Message</label>
+                </div>
+              </div>
+  
+              <button type="submit" class="btn btn-primary btn-lg w-100 mb-3" [disabled]="!bookingForm.valid">
+                <i class="fas fa-paper-plane me-2"></i>
+                Submit Booking Request
+              </button>
+  
+              <p class="text-center text-muted small mt-3">
+                <i class="fas fa-shield-alt me-1"></i>
+                Your information is secure and encrypted
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+ 
+</div> 

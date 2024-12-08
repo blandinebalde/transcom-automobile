@@ -8,6 +8,8 @@ import { NavbarModule } from './components/navbar/navbar.module';
 import { App } from '../main';
 import { routes } from './app.routes';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { BookingComponent } from './components/booking/booking.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +19,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    App
+    App,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    ReactiveFormsModule
   ],
   bootstrap: [App]
 })

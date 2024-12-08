@@ -5,20 +5,38 @@
       <router-outlet></router-outlet>
     
     </main>
-    <footer class="text-light py-4" style="background-color: var(--primary-color)" >
-      <div class="container text-center">
-        <div class="mb-3">
-          <a href="https://facebook.com" target="_blank" class="text-light mx-2">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="24" height="24">
-          </a>
-          <a href="https://twitter.com" target="_blank" class="text-light mx-2">
-            <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="Twitter" width="24" height="24">
-          </a>
-          <a href="https://instagram.com" target="_blank" class="text-light mx-2">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24">
-          </a>
+    <footer class="text-light py-5" style="background-color: var(--primary-color); border-top: 3px solid rgba(255,255,255,0.1);">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3">Connect With Us</h5>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3">
+              <a href="https://facebook.com" target="_blank" class="text-light social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="32" height="32" class="hover-scale">
+              </a>
+              <a href="https://twitter.com" target="_blank" class="text-light social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="Twitter" width="32" height="32" class="hover-scale">
+              </a>
+              <a href="https://instagram.com" target="_blank" class="text-light social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="32" height="32" class="hover-scale">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="assets/images/logosb2.png" alt="Transcom Auto Logo" height="60" class="mb-3" style="transition: all 0.3s ease; transform-origin: center; transform: scale(2.5);"
+               onmouseover="this.style.transform='scale(2.8)'" 
+               onmouseout="this.style.transform='scale(2.5)'">
+            <p class="mb-0 text-light-50">&copy; 2024 Transcom Automobile.<br>All rights reserved.</p>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <div class="d-flex flex-column gap-2">
+              <a href="/about" class="text-light text-decoration-none hover-bright">About Us</a>
+              <a href="/contact" class="text-light text-decoration-none hover-bright">Contact</a>
+              <a href="/services" class="text-light text-decoration-none hover-bright">Services</a>
+            </div>
+          </div>
         </div>
-        <p class="mb-0">&copy; 2024 Transcom Automobile. All rights reserved.</p>
       </div>
-    </footer> 
+    </footer>
     </div>
