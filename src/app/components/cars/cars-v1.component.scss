@@ -1,0 +1,325 @@
+.pricing-container {
+    background-color: #1b2838;
+    color: white;
+    text-align: center;
+    padding: 0 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin-bottom: 2rem;
+
+    .logo {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+.pricing-title {
+    background-color: white;
+    position: relative;
+}
+
+.category-card {
+    position: relative;
+    background: linear-gradient(135deg, rgba(3, 142, 160, 0.95), rgba(2, 89, 100, 0.95));
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+        .discount-list {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+
+        .category-header {
+            transform: translateY(-20px);
+        }
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    .discount-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, #d46a075d, #d49814);
+        color: white;
+        padding: 0.8rem 1.2rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        &.premium {
+            background: linear-gradient(135deg, #ffd700, #ff9000);
+        }
+
+        span {
+            font-size: 0.8rem;
+            display: block;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin: 0.2rem 0;
+            font-weight: 700;
+        }
+    }
+
+    .category-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease;
+
+        .category-icon {
+            margin-bottom: 1.5rem;
+
+            i {
+                color: white;
+                font-size: 2.5rem;
+                filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+            }
+        }
+
+        .vehicle-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white;
+            margin: 0;
+        }
+    }
+
+    .category-content {
+        .discount-list {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            margin-top: 1rem;
+
+            .discount-item {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                margin-bottom: 0.8rem;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                transition: transform 0.2s ease;
+                color: white;
+
+                i {
+                    margin-right: 1rem;
+                    color: white;
+
+                    &.sparkle {
+                        color: #ffd700;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+                    background: rgba(255, 255, 255, 0.15);
+                }
+
+                &.premium {
+                    background: rgba(255, 215, 0, 0.1);
+                }
+            }
+        }
+    }
+
+    &.premium-card {
+        background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+        color: white;
+
+        .vehicle-title {
+            color: white;
+        }
+
+        .category-icon i {
+            color: #ffd700;
+        }
+
+        .discount-item {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.15);
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .category-card {
+        &::after {
+            content: 'Appuyez pour voir les remises';
+        }
+    }
+}
+
+.vehicle-categories {
+    padding: 0 2rem;
+
+    .category {
+        margin-bottom: 2rem;
+
+        h3 {
+            color: #a5c5ef;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            font-family: 'Times New Roman', serif;
+        }
+    }
+}
+
+.car-gallery {
+    background: linear-gradient(to bottom, transparent 0%, white 50%);
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .car-image {
+        max-width: 200px;
+        height: auto;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.cta-section {
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+
+    .reserve-button {
+        background-color: #1b2838;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #2a3f5f;
+        }
+    }
+
+    .phone-number {
+        color: #1b2838;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-title {
+
+        h1,
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .vehicle-categories {
+        .category {
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .car-gallery {
+        .car-image {
+            max-width: 150px;
+        }
+    }
+
+    .category-card {
+        padding: 1.5rem;
+
+        .category-header {
+            .vehicle-title {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-title {
+
+        h1,
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .vehicle-categories {
+        padding: 0 1rem;
+
+        .category {
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .car-gallery {
+        padding: 2rem 1rem;
+
+        .car-image {
+            max-width: 120px;
+        }
+    }
+
+    .cta-section {
+        .reserve-button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .phone-number {
+            font-size: 1.2rem;
+        }
+    }
+}

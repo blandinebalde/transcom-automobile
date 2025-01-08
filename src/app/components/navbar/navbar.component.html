@@ -1,43 +1,43 @@
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color:  var(--primary-color) ">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#" style="margin-left: 10px;">
+        <a class="navbar-brand d-flex align-items-center py-2 py-md-3" href="#" style="margin-left: 10px;">
           <img src="assets/images/logosb2.png" alt="Logo" height="40" class="logo-img d-none d-lg-block" 
                style="transition: all 0.3s ease; transform-origin: center; transform: scale(2.5);"
                onmouseover="this.style.transform='scale(2.8)'" 
                onmouseout="this.style.transform='scale(2.5)'">
-          <img src="assets/images/logosb2.png" alt="Logo" height="30" class="logo-img d-lg-none"
+          <img src="assets/images/logosb2.png" alt="Logo" height="35" class="logo-img d-lg-none"
                style="transition: all 0.3s ease; transform-origin: center; transform: scale(4);"
-               onmouseover="this.style.transform='scale(4)'"
-               onmouseout="this.style.transform='scale(5)'">
+               onmouseover="this.style.transform='scale(4.2)'"
+               onmouseout="this.style.transform='scale(4)'">
         </a>
 
-        <button class="navbar-toggler border-white bg-white" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
+        <button id="navbarToggler" class="navbar-toggler border-white bg-white my-2" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item mx-2">
-              <a class="nav-link fw-medium text-white" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <li class="nav-item mx-2 py-2 py-lg-0">
+              <a class="nav-link fw-medium text-white" (click)="closeMenu()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <i class="fas fa-home me-1"></i>
                 {{ 'NAV.HOME' | translate }}
               </a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link fw-medium text-white" routerLink="/cars" routerLinkActive="active">
+            <li class="nav-item mx-2 py-2 py-lg-0">
+              <a class="nav-link fw-medium text-white" (click)="closeMenu()" routerLink="/cars" routerLinkActive="active">
                 <i class="fas fa-car me-1"></i>
                 {{ 'NAV.CARS' | translate }}
               </a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link fw-medium text-white" routerLink="/policies" routerLinkActive="active">
+            <li class="nav-item mx-2 py-2 py-lg-0">
+              <a class="nav-link fw-medium text-white" (click)="closeMenu()" routerLink="/policies" routerLinkActive="active">
                 <i class="fas fa-shield-alt me-1"></i>
                 {{ 'NAV.POLICIES' | translate }}
               </a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link fw-medium text-white" routerLink="/contact" routerLinkActive="active">
+            <li class="nav-item mx-2 py-2 py-lg-0">
+              <a class="nav-link fw-medium text-white" (click)="closeMenu()" routerLink="/contact" routerLinkActive="active">
                 <i class="fas fa-envelope me-1"></i>
                 {{ 'NAV.CONTACT' | translate }}
               </a>
@@ -53,3 +53,5 @@
         </div>
       </div>
     </nav>
+
+   

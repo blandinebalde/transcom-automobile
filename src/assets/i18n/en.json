@@ -1,6 +1,6 @@
 {
     "NAV": {
-      "HOME":"Home",
+      "HOME":"Home", 
       "ABOUT": "About",
       "CARS": "Cars",
       "POLICIES": "Policies",
@@ -14,7 +14,7 @@
         "WELCOME_SUB": "Experience luxury and comfort with our premium car selection",
         "PREMIUM_FLEET": "Premium Fleet",
         "PREMIUM_FLEET_SUB": "Choose from our wide range of luxury vehicles",
-        "ELEGANT_SEDANS": "Elegant Sedans",
+        "ELEGANT_SEDANS": "Elegant Sedans", 
         "ELEGANT_SEDANS_SUB": "Travel in style with our luxury sedans",
         "SUV_COLLECTION": "SUV Collection",
         "SUV_COLLECTION_SUB": "Perfect for family trips and adventures",
@@ -42,7 +42,7 @@
       "TITLE": "Contact Us",
       "SEND_MESSAGE": "Send us a message",
       "NAME": "Name",
-      "EMAIL": "Email",
+      "EMAIL": "Email", 
       "MESSAGE": "Message",
       "SEND_BUTTON": "Send Message",
       "INFO_TITLE": "Contact Information",
@@ -89,5 +89,30 @@
           "ANSWER": "Yes, reservations can be modified or cancelled up to 24 hours before the pickup time without penalty."
         }
       }
+    },
+    "PRICING": {
+      "GRID": "Our Pricing Grid",
+      "RATES": "Daily Rates and Special Discounts"
+    },
+    "CTA": {
+      "RESERVE_NOW": "Reserve Now",
+      "AVAILABLE_24_7": "Available 24/7"
+    },
+    "VEHICLES": {
+      "4X4": {
+        "TITLE": "4x4 SUVs from {{price}} CFA/day"
+      },
+      "BERLINE": {
+        "TITLE": "Berline from {{price}} CFA/day"
+      },
+      "LUXURY": {
+        "TITLE": "Luxury Vehicles from {{price}} CFA/day"
+      },
+      "DISCOUNT": {
+        "7_DAYS": "{{percent}}% discount for 7+ days rental",
+        "10_DAYS": "{{percent}}% discount for 10+ days rental",
+        "15_DAYS": "{{percent}}% discount for 15+ days rental"
+      }
     }
-  }
+
+}

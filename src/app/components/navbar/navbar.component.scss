@@ -22,21 +22,25 @@
   }
 
   .navbar {
-
-    min-height: 50px;
-    padding-top: 15px;
-
-    padding-bottom: 15px;
+    min-height: 80px;
+    padding: 20px 0;
   }
 
   .navbar-toggler {
-    margin: 10px 0;
+    margin: 15px 0;
   }
 }
 
 @media (max-width: 991.98px) {
-  .mobile-nav {
-    min-height: 80px;
+  .navbar {
+    min-height: 120px;
+  }
+
+  .navbar-collapse {
     padding: 15px 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
   }
 }

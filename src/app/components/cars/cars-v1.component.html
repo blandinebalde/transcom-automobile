@@ -1,0 +1,131 @@
+<div class="pricing-container">
+  <!-- Pricing Title -->
+  <div class="pricing-title">
+    <video class="w-100" autoplay loop muted playsinline>
+      <source src="../../../assets/video/transcom.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Vehicle Categories -->
+  <div class="vehicle-categories container">
+    <div class="row g-4">
+      <!-- 4x4 Category -->
+      <div class="col-lg-4">
+        <div class="category-card elegant-card animate-on-scroll" data-aos="fade-up" data-aos-delay="100">
+          <div class="discount-badge">
+            <span>À partir de</span>
+            <h3>30.000</h3>
+            <span>XOF/jour</span>
+          </div>
+          <div class="category-header">
+            <div class="category-icon pulse-animation">
+              <i class="fas fa-truck-monster fa-2x icon-3d"></i>
+            </div>
+            <h3 class="vehicle-title slide-in" style="text-align: left;" >{{ 'VEHICLES.4X4.TITLE' | translate }}</h3>
+          </div>
+          <div class="category-content">
+            <div class="discount-list">
+              <div class="discount-item hover-scale">
+                <i class="fas fa-check bounce"></i>
+                {{ 'VEHICLES.DISCOUNT.10_DAYS' | translate:{ percent: '10' } }}
+              </div>
+              <div class="discount-item hover-scale">
+                <i class="fas fa-check bounce"></i>
+                {{ 'VEHICLES.DISCOUNT.15_DAYS' | translate:{ percent: '15' } }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Berline Category -->
+      <div class="col-lg-4">
+        <div class="category-card elegant-card animate-on-scroll" data-aos="fade-up" data-aos-delay="200">
+          <div class="discount-badge">
+            <span>À partir de</span>
+            <h3>25.000</h3>
+            <span>XOF/jour</span>
+          </div>
+          <div class="category-header">
+            <div class="category-icon pulse-animation">
+              <i class="fas fa-car-side fa-2x icon-3d"></i>
+            </div>
+            <h3 class="vehicle-title slide-in " style="text-align: left;" >{{ 'VEHICLES.BERLINE.TITLE' | translate }}</h3>
+          </div>
+          <div class="category-content">
+            <div class="discount-list">
+              <div class="discount-item hover-scale">
+                <i class="fas fa-check bounce"></i>
+                {{ 'VEHICLES.DISCOUNT.10_DAYS' | translate:{ percent: '10' } }}
+              </div>
+              <div class="discount-item hover-scale">
+                <i class="fas fa-check bounce"></i>
+                {{ 'VEHICLES.DISCOUNT.15_DAYS' | translate:{ percent: '15' } }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Luxury Category -->
+      <div class="col-lg-4">
+        <div class="category-card elegant-card premium-card animate-on-scroll" data-aos="fade-up" data-aos-delay="300">
+          <div class="discount-badge premium">
+            <span>À partir de</span>
+            <h3>50.000</h3>
+            <span>XOF/jour</span>
+          </div>
+          <div class="category-header">
+            <div class="category-icon pulse-animation">
+              <i class="fas fa-car fa-2x icon-3d"></i>
+            </div>
+            <h3 class="vehicle-title slide-in" style="text-align: left;" >{{ 'VEHICLES.LUXURY.TITLE' | translate }}</h3>
+          </div>
+          <div class="category-content">
+            <div class="discount-list">
+              <div class="discount-item premium hover-scale">
+                <i class="fas fa-crown sparkle"></i>
+                {{ 'VEHICLES.DISCOUNT.7_DAYS' | translate:{ percent: '10' } }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Car Images Gallery -->
+  <div class="car-gallery container mt-5">
+    <div class="row g-4">
+      <div *ngFor="let car of filteredCars" class="col-md-4">
+        <div class="car-card">
+          <img [src]="car.image" [alt]="car.name" class="car-image">
+          <div class="car-overlay">
+            <h4>{{car.name}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="cta-section mt-5">
+    <div class="cta-content text-center">
+      <button class="reserve-button pulse-animation" (click)="navigateToReservation()">
+        <i class="fas fa-car me-2"></i>
+        <span>{{ 'CTA.RESERVE_NOW' | translate }}</span>
+        <i class="fas fa-arrow-right ms-2"></i>
+      </button>
+      <div class="phone-wrapper mt-3">
+        <a href="tel:+221770295200" class="phone-link">
+          <i class="fas fa-phone-alt me-2 bounce"></i>
+          <span class="phone-number">+221 77 029 52 00</span>
+        </a>
+      </div>
+      <div class="cta-message mt-2">
+        <small class="text-muted">{{ 'CTA.AVAILABLE_24_7' | translate }}</small>
+      </div>
+    </div>
+  </div>
+</div>
