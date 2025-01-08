@@ -89,5 +89,34 @@
         "ANSWER": "Oui, les réservations peuvent être modifiées ou annulées jusqu'à 24 heures avant l'heure de prise en charge sans pénalité."
       }
     }
+  }, 
+  "VEHICLES": {
+    "TITLE": "Nos Véhicules",
+    "4X4": {
+      "TITLE": "4X4",
+      "PRICE": "30.000"
+    },
+    "BERLINE": {
+      "TITLE": "Berline",
+      "PRICE": "20.000"
+    },
+    "LUXURY": {
+      "TITLE": "Luxe",
+      "PRICE": "50.000"
+    },
+    "DISCOUNT": {
+      "7_DAYS": "{{percent}}% de réduction pour 7+ jours de location",
+      "10_DAYS": "{{percent}}% de réduction pour 10+ jours de location",
+      "15_DAYS": "{{percent}}% de réduction pour 15+ jours de location"
+    }
+   
+  }, 
+  "PRICING": {
+    "GRID": "Notre Grille de Tarifs",
+    "RATES": "Tarifs Journaliers et Remises Spéciales"
+  }, 
+  "CTA": {
+    "RESERVE_NOW": "Réserver maintenant",
+    "AVAILABLE_24_7": "Disponible 24/7"
   }
 }
