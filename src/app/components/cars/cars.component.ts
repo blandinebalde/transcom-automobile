@@ -5,6 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 import { CarService } from '../../services/car.service';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedModule } from '../../shared/shared.module';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 interface Car {
   id: number;
@@ -17,7 +18,7 @@ interface Car {
 @Component({
   selector: 'app-cars',
   standalone: true,
-  imports: [NgFor, NgIf, FormsModule, RouterModule, SharedModule],
+  imports: [NgFor, NgIf, FormsModule, RouterModule, SharedModule, NgbCarouselModule],
   templateUrl: './cars-v1.component.html',
   styleUrls: ['./cars-v1.component.scss']
 })

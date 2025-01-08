@@ -1,59 +1,32 @@
-    
-    
+<div class="bubbles-wrapper">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+
     <section class="hero">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <div class="carousel-caption">
-            <h2>{{ 'HOME.HERO.WELCOME' | translate }}</h2>
-            <p>{{ 'HOME.HERO.WELCOME_SUB' | translate }}</p>
-          </div>
-          <div class="picsum-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&h=900" alt="Luxury Car">
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="carousel-caption">
-            <h2>{{ 'HOME.HERO.PREMIUM_FLEET' | translate }}</h2>
-            <p>{{ 'HOME.HERO.PREMIUM_FLEET_SUB' | translate }}</p>
-          </div>
-          <div class="picsum-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&h=900" alt="Sports Car">
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="carousel-caption">
-            <h2>{{ 'HOME.HERO.ELEGANT_SEDANS' | translate }}</h2>
-            <p>{{ 'HOME.HERO.ELEGANT_SEDANS_SUB' | translate }}</p>
-          </div>
-          <div class="picsum-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=900" alt="Luxury Sedan">
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="carousel-caption">
-            <h2>{{ 'HOME.HERO.SUV_COLLECTION' | translate }}</h2>
-            <p>{{ 'HOME.HERO.SUV_COLLECTION_SUB' | translate }}</p>
-          </div>
-          <div class="picsum-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=900" alt="Luxury SUV">
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="carousel-caption">
-            <h2>{{ 'HOME.HERO.EXECUTIVE_CLASS' | translate }}</h2>
-            <p>{{ 'HOME.HERO.EXECUTIVE_CLASS_SUB' | translate }}</p>
-          </div>
-          <div class="picsum-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=900" alt="Executive Car" style="object-fit: cover;">
-          </div>
-        </ng-template>
-      </ngb-carousel>
+      <div class="video-container">
+        <video autoplay muted loop class="hero-video" style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="assets/video/transcom.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
 
-    <section class="features section-padding bg-light">
+    <section class="features section-padding bg-dark home-features">
       <div class="container">
-        <h2 class="text-center mb-5 display-4 fw-bold text-primary">{{ 'HOME.FEATURES.TITLE' | translate }}</h2>
-        <div class="row g-4">
+          <div class="content">
+            <h2 class="text-center display-4 fw-bold text-primary mb-5">{{ 'HOME.HERO.WELCOME' | translate }}</h2>
+            <p class="text-center text-white">{{ 'HOME.HERO.WELCOME_SUB' | translate }}</p>
+          </div>
+                <div class="row g-4">
           <div class="col-md-4">
             <div class="card h-100 border-0 shadow-lg hover-lift">
               <div class="card-body text-center p-5">
@@ -91,7 +64,7 @@
       </div>
     </section>
 
-    <section class="about section-padding">
+    <section class="about bg-dark section-padding">
       <div class="container">
         <h1 class="text-center display-4 fw-bold text-primary mb-5">{{ 'HOME.ABOUT.TITLE' | translate }}</h1>
         <div class="row g-5 align-items-center">

@@ -1,10 +1,53 @@
 <div class="pricing-container">
   <!-- Pricing Title -->
   <div class="pricing-title">
-    <video class="w-100" autoplay loop muted playsinline>
-      <source src="../../../assets/video/transcom.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="carousel-caption">
+          <h2>{{ 'HOME.HERO.WELCOME' | translate }}</h2>
+          <p>{{ 'HOME.HERO.WELCOME_SUB' | translate }}</p>
+        </div>
+        <div class="picsum-img-wrapper">
+          <img src="assets/images/cars/luxury-car.jpg" alt="Luxury Car">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="carousel-caption">
+          <h2>{{ 'HOME.HERO.PREMIUM_FLEET' | translate }}</h2>
+          <p>{{ 'HOME.HERO.PREMIUM_FLEET_SUB' | translate }}</p>
+        </div>
+        <div class="picsum-img-wrapper">
+          <img src="assets/images/cars/sports-car.jpg" alt="Sports Car">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="carousel-caption">
+          <h2>{{ 'HOME.HERO.ELEGANT_SEDANS' | translate }}</h2>
+          <p>{{ 'HOME.HERO.ELEGANT_SEDANS_SUB' | translate }}</p>
+        </div>
+        <div class="picsum-img-wrapper">
+          <img src="assets/images/cars/sedan.jpg" alt="Luxury Sedan">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="carousel-caption">
+          <h2>{{ 'HOME.HERO.SUV_COLLECTION' | translate }}</h2>
+          <p>{{ 'HOME.HERO.SUV_COLLECTION_SUB' | translate }}</p>
+        </div>
+        <div class="picsum-img-wrapper">
+          <img src="assets/images/cars/suv.jpg" alt="Luxury SUV">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="carousel-caption">
+          <h2>{{ 'HOME.HERO.EXECUTIVE_CLASS' | translate }}</h2>
+          <p>{{ 'HOME.HERO.EXECUTIVE_CLASS_SUB' | translate }}</p>
+        </div>
+        <div class="picsum-img-wrapper">
+          <img src="assets/images/cars/executive.jpg" alt="Executive Car">
+        </div>
+      </ng-template>
+    </ngb-carousel>
   </div>
 
   <!-- Vehicle Categories -->
