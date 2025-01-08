@@ -10,5 +10,10 @@ import { LanguageService } from '../../services/language.service';
   imports: [SharedModule]
 })
 export class PoliciesComponent {
-  constructor(private languageService: LanguageService) { }
+  activePanel: string = 'faq1'; // Default open panel
+  constructor(private languageService: LanguageService ) { }
+
+  togglePanel(panel: string) {
+    this.activePanel = this.activePanel === panel ? '' : panel;
+  }
 }

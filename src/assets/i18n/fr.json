@@ -57,8 +57,8 @@
     "REQUIREMENTS": {
       "TITLE": "Conditions Requises",
       "DRIVERS_LICENSE": "Permis de conduire valide",
-      "MIN_AGE": "Âge minimum : 25 ans",
-      "CREDIT_CARD": "Carte de crédit pour la caution"
+      "MIN_AGE": "Âge minimum : 18 ans",
+      "CREDIT_CARD": "Carte de crédit ou cash ou paiement électronique pour la caution"
     },
     "INSURANCE": {
       "TITLE": "Assurance",
@@ -87,6 +87,10 @@
       "MODIFICATION": {
         "QUESTION": "Puis-je modifier ou annuler ma réservation ?",
         "ANSWER": "Oui, les réservations peuvent être modifiées ou annulées jusqu'à 24 heures avant l'heure de prise en charge sans pénalité."
+      }, 
+      "DRIVERS": {
+        "QUESTION": "Pouvons-nous avoir un chauffeur avec la voiture ?",
+        "ANSWER": "Oui, nous pouvons fournir un chauffeur avec la voiture."
       }
     }
   }, 

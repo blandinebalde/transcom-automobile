@@ -26,11 +26,15 @@
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            <button class="accordion-button" 
+                    [class.collapsed]="activePanel !== 'faq1'"
+                    (click)="togglePanel('faq1')">
               {{ 'POLICIES.FAQ.DURATION.QUESTION' | translate }}
             </button>
           </h3>
-          <div id="faq1" class="accordion-collapse collapse show">
+          <div class="accordion-collapse" 
+                 [class.show]="activePanel === 'faq1'"
+                 [class.collapse]="activePanel !== 'faq1'">
             <div class="accordion-body">
               {{ 'POLICIES.FAQ.DURATION.ANSWER' | translate }}
             </div>
@@ -39,11 +43,15 @@
 
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            <button class="accordion-button" 
+                    [class.collapsed]="activePanel !== 'faq2'"
+                    (click)="togglePanel('faq2')">
               {{ 'POLICIES.FAQ.LATE_RETURN.QUESTION' | translate }}
             </button>
           </h3>
-          <div id="faq2" class="accordion-collapse collapse">
+          <div class="accordion-collapse"
+                 [class.show]="activePanel === 'faq2'"
+                 [class.collapse]="activePanel !== 'faq2'">
             <div class="accordion-body">
               {{ 'POLICIES.FAQ.LATE_RETURN.ANSWER' | translate }}
             </div>
@@ -52,11 +60,15 @@
 
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            <button class="accordion-button" 
+                    [class.collapsed]="activePanel !== 'faq3'"
+                    (click)="togglePanel('faq3')">
               {{ 'POLICIES.FAQ.AIRPORT.QUESTION' | translate }}
             </button>
           </h3>
-          <div id="faq3" class="accordion-collapse collapse">
+          <div class="accordion-collapse"
+                 [class.show]="activePanel === 'faq3'"
+                 [class.collapse]="activePanel !== 'faq3'">
             <div class="accordion-body">
               {{ 'POLICIES.FAQ.AIRPORT.ANSWER' | translate }}
             </div>
@@ -65,11 +77,15 @@
 
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            <button class="accordion-button" 
+                    [class.collapsed]="activePanel !== 'faq4'"
+                    (click)="togglePanel('faq4')">
               {{ 'POLICIES.FAQ.PRICE.QUESTION' | translate }}
             </button>
           </h3>
-          <div id="faq4" class="accordion-collapse collapse">
+          <div class="accordion-collapse"
+                 [class.show]="activePanel === 'faq4'"
+                 [class.collapse]="activePanel !== 'faq4'">
             <div class="accordion-body">
               {{ 'POLICIES.FAQ.PRICE.ANSWER' | translate }}
             </div>
@@ -78,13 +94,34 @@
 
         <div class="accordion-item">
           <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            <button class="accordion-button" 
+                    [class.collapsed]="activePanel !== 'faq5'"
+                    (click)="togglePanel('faq5')">
               {{ 'POLICIES.FAQ.MODIFICATION.QUESTION' | translate }}
             </button>
           </h3>
-          <div id="faq5" class="accordion-collapse collapse">
+          <div class="accordion-collapse"
+                 [class.show]="activePanel === 'faq5'"
+                 [class.collapse]="activePanel !== 'faq5'">
             <div class="accordion-body">
               {{ 'POLICIES.FAQ.MODIFICATION.ANSWER' | translate }}
+            </div>
+          </div>
+          
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" 
+                    [class.collapsed]="activePanel !== 'faq6'"
+                    (click)="togglePanel('faq6')">
+              {{ 'POLICIES.FAQ.DRIVERS.QUESTION' | translate }}
+            </button>
+          </h3>
+          <div class="accordion-collapse"
+                 [class.show]="activePanel === 'faq6'"
+                 [class.collapse]="activePanel !== 'faq6'">
+            <div class="accordion-body">
+              {{ 'POLICIES.FAQ.DRIVERS.ANSWER' | translate }}
             </div>
           </div>
         </div>

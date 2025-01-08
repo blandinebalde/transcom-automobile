@@ -2,51 +2,43 @@
   <!-- Pricing Title -->
   <div class="pricing-title">
     <ngb-carousel>
-      <ng-template ngbSlide>
-        <div class="carousel-caption">
-          <h2>{{ 'HOME.HERO.WELCOME' | translate }}</h2>
-          <p>{{ 'HOME.HERO.WELCOME_SUB' | translate }}</p>
+      <ng-template ngbSlide >
+        <div class="carousel-caption" >     
+               <h2 class="display-4 fw-bold">{{ 'HOME.HERO.EXECUTIVE_CLASS' | translate }}</h2>
+          <p class="lead">{{ 'HOME.HERO.EXECUTIVE_CLASS_SUB' | translate }}</p>
         </div>
-        <div class="picsum-img-wrapper">
-          <img src="assets/images/cars/luxury-car.jpg" alt="Luxury Car">
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <div class="carousel-caption">
-          <h2>{{ 'HOME.HERO.PREMIUM_FLEET' | translate }}</h2>
-          <p>{{ 'HOME.HERO.PREMIUM_FLEET_SUB' | translate }}</p>
-        </div>
-        <div class="picsum-img-wrapper">
-          <img src="assets/images/cars/sports-car.jpg" alt="Sports Car">
+        <div class="picsum-img-wrapper" style="height: 600px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop" alt="Luxury Car" style="height: 600px; object-fit: cover;">
         </div>
       </ng-template>
       <ng-template ngbSlide>
         <div class="carousel-caption">
-          <h2>{{ 'HOME.HERO.ELEGANT_SEDANS' | translate }}</h2>
-          <p>{{ 'HOME.HERO.ELEGANT_SEDANS_SUB' | translate }}</p>
+          <h2 class="display-4 fw-bold">{{ 'HOME.HERO.PREMIUM_FLEET' | translate }}</h2>
+          <p class="lead">{{ 'HOME.HERO.PREMIUM_FLEET_SUB' | translate }}</p>
         </div>
-        <div class="picsum-img-wrapper">
-          <img src="assets/images/cars/sedan.jpg" alt="Luxury Sedan">
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <div class="carousel-caption">
-          <h2>{{ 'HOME.HERO.SUV_COLLECTION' | translate }}</h2>
-          <p>{{ 'HOME.HERO.SUV_COLLECTION_SUB' | translate }}</p>
-        </div>
-        <div class="picsum-img-wrapper">
-          <img src="assets/images/cars/suv.jpg" alt="Luxury SUV">
+        <div class="picsum-img-wrapper" style="height: 600px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2070&auto=format&fit=crop" alt="Sports Car" style="height: 600px; object-fit: cover;">
         </div>
       </ng-template>
       <ng-template ngbSlide>
         <div class="carousel-caption">
-          <h2>{{ 'HOME.HERO.EXECUTIVE_CLASS' | translate }}</h2>
-          <p>{{ 'HOME.HERO.EXECUTIVE_CLASS_SUB' | translate }}</p>
+          <h2 class="display-4 fw-bold">{{ 'HOME.HERO.ELEGANT_SEDANS' | translate }}</h2>
+          <p class="lead">{{ 'HOME.HERO.ELEGANT_SEDANS_SUB' | translate }}</p>
         </div>
-        <div class="picsum-img-wrapper">
-          <img src="assets/images/cars/executive.jpg" alt="Executive Car">
+        <div class="picsum-img-wrapper" style="height: 600px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=2070&auto=format&fit=crop" alt="Luxury Sedan" style="height: 600px; object-fit: cover;">
         </div>
       </ng-template>
+      <ng-template ngbSlide>
+        <div class="carousel-caption">
+          <h2 class="display-4 fw-bold">{{ 'HOME.HERO.SUV_COLLECTION' | translate }}</h2>
+          <p class="lead">{{ 'HOME.HERO.SUV_COLLECTION_SUB' | translate }}</p>
+        </div>
+        <div class="picsum-img-wrapper" style="height: 600px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=2070&auto=format&fit=crop" alt="Luxury SUV" style="height: 600px; object-fit: cover;">
+        </div>
+      </ng-template>
+      
     </ngb-carousel>
   </div>
 
@@ -69,11 +61,11 @@
           </div>
           <div class="category-content">
             <div class="discount-list">
-              <div class="discount-item hover-scale">
+              <div class="discount-item hover-scale text-white" >
                 <i class="fas fa-check bounce"></i>
                 {{ 'VEHICLES.DISCOUNT.10_DAYS' | translate:{ percent: '10' } }}
               </div>
-              <div class="discount-item hover-scale">
+              <div class="discount-item hover-scale text-white">
                 <i class="fas fa-check bounce"></i>
                 {{ 'VEHICLES.DISCOUNT.15_DAYS' | translate:{ percent: '15' } }}
               </div>
@@ -98,11 +90,11 @@
           </div>
           <div class="category-content">
             <div class="discount-list">
-              <div class="discount-item hover-scale">
+              <div class="discount-item hover-scale text-white">
                 <i class="fas fa-check bounce"></i>
                 {{ 'VEHICLES.DISCOUNT.10_DAYS' | translate:{ percent: '10' } }}
               </div>
-              <div class="discount-item hover-scale">
+              <div class="discount-item hover-scale text-white">
                 <i class="fas fa-check bounce"></i>
                 {{ 'VEHICLES.DISCOUNT.15_DAYS' | translate:{ percent: '15' } }}
               </div>
@@ -127,7 +119,7 @@
           </div>
           <div class="category-content">
             <div class="discount-list">
-              <div class="discount-item premium hover-scale">
+              <div class="discount-item premium hover-scale text-white" style="font-size: 1.2rem; font-weight: 500;">
                 <i class="fas fa-crown sparkle"></i>
                 {{ 'VEHICLES.DISCOUNT.7_DAYS' | translate:{ percent: '10' } }}
               </div>
@@ -138,18 +130,59 @@
     </div>
   </div>
 
-  <!-- Car Images Gallery -->
   <div class="car-gallery container mt-5">
     <div class="row g-4">
-      <div *ngFor="let car of filteredCars" class="col-md-4">
-        <div class="car-card">
-          <img [src]="car.image" [alt]="car.name" class="car-image">
-          <div class="car-overlay">
-            <h4>{{car.name}}</h4>
+      <div *ngFor="let car of displayedCars" class="col-md-4">
+        <div class="car-card hover-effect" (click)="openCarDetails(car)">
+          <div class="image-wrapper">
+            <img [src]="car.image" [alt]="car.name" class="car-image fade-in">
+          </div>
+          <div class="car-overlay slide-up">
+            <h4 class="car-name">{{car.name}}</h4>
+            
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="show-more-btn" (click)="showAllCars()" *ngIf="!showingAll">
+          <span>Show More</span>
+          <i class="fas fa-chevron-down ms-2"></i>
+        </button>
+        <button class="show-more-btn" (click)="showLessCars()" *ngIf="showingAll">
+          <span>Show Less</span>
+          <i class="fas fa-chevron-up ms-2"></i>
+        </button>
+      </div>
+  
+    </div>
+
+    
+    <!-- Car Details Modal -->
+    <div class="modal" [class.show]="selectedCar" [class.d-block]="selectedCar" id="carDetailsModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document" *ngIf="selectedCar">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center  text-dark fw-bold ">{{selectedCar.name}}</h5>
+            <button type="button" class="btn-close" (click)="closeCarDetails()"></button>
+          </div>
+          <div class="modal-body text-center  text-dark">
+            <img [src]="selectedCar.image" [alt]="selectedCar.name" class="img-fluid mb-3">
+            <p><strong>Category:</strong> {{selectedCar.category}}</p>
+            <p><strong>Price:</strong> {{selectedCar.price}} XOF/day</p>
+            <p>{{selectedCar.description}}</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" (click)="navigateToReservation()">Reserve Now</button>
+            <button type="button" class="btn btn-secondary" (click)="closeCarDetails()">Close</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+    
+    <!-- Show More Button -->
+    
   </div>
 
   <!-- Call to Action -->
@@ -171,4 +204,3 @@
       </div>
     </div>
   </div>
-</div>

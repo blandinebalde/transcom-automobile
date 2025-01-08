@@ -56,9 +56,9 @@
       "TITLE": "Rental Policies",
       "REQUIREMENTS": {
         "TITLE": "Requirements",
-        "DRIVERS_LICENSE": "Valid driver's license",
-        "MIN_AGE": "Minimum age: 25 years",
-        "CREDIT_CARD": "Credit card for security deposit"
+        "DRIVERS_LICENSE": "Valid driver's license ",
+        "MIN_AGE": "Minimum age: 18 years",
+        "CREDIT_CARD": "Credit card or cash or electronic payment for security deposit"
       },
       "INSURANCE": {
         "TITLE": "Insurance",
@@ -87,6 +87,10 @@
         "MODIFICATION": {
           "QUESTION": "Can I modify or cancel my reservation?",
           "ANSWER": "Yes, reservations can be modified or cancelled up to 24 hours before the pickup time without penalty."
+        }, 
+        "DRIVERS": {
+          "QUESTION": "Can we have a driver with the car?",
+          "ANSWER": "Yes, we can provide a driver with the car."
         }
       }
     },
@@ -99,6 +103,7 @@
       "AVAILABLE_24_7": "Available 24/7"
     },
     "VEHICLES": {
+      "TITLE": "Our Vehicles",
       "4X4": {
         "TITLE": "4x4 SUVs from {{price}} CFA/day"
       },
